@@ -17,13 +17,40 @@
     .badge-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 equal columns */
         gap: 8px;
     }
 
     .nav-badge {
         margin: 0 auto;
         margin-top: 1.25rem;
+    }
+
+    /* frame styles */
+
+    .frame-container {
+        margin-top: 1.25rem;
+        height: 50%;
+    }
+
+    .frame-logo {
+        width: 3.13rem;
+        height: 3.13rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    
+    .tframe-h {
+        font-size: medium;
+        margin: 0 auto;
+        margin-top: 1rem;
+        
+    }
+    
+    .dframe-h {
+        font-size: small;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 
 }
