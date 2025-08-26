@@ -14,6 +14,13 @@
         margin: 1.25rem 1.25rem 0rem 1.25rem;
     }
 
+    .badge-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 equal columns */
+        gap: 8px;
+    }
+
     .nav-badge {
         margin: 0 auto;
         margin-top: 1.25rem;
