@@ -29,7 +29,7 @@
 
     .frame-container {
         margin-top: 1.25rem;
-        height: 50%;
+        height: 70%;
     }
 
     .frame-logo {
@@ -38,14 +38,14 @@
         margin: 0 auto;
         margin-top: 1rem;
     }
-    
+
     .tframe-h {
         font-size: medium;
         margin: 0 auto;
         margin-top: 1rem;
-        
+
     }
-    
+
     .dframe-h {
         font-size: small;
         text-align: center;
