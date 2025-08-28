@@ -56,8 +56,6 @@
             </div>
         </div>
 
-    </header>
-    <main class="bg-[#f5fff6]">
         <!-- Hero Frame Section -->
         <div
             class="frame-container inter-normal flex flex-col items-center bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] h-[17rem] w-full">
@@ -72,8 +70,10 @@
                 Fingertip - A Project by Government of the People's Republic of Bangladesh
             </h3>
         </div>
+    </header>
+    <main class="bg-[#f5fff6] flex flex-row gap-8 p-4 items-start">
         <!-- Service Card Section -->
-        <div class="pt-[10px] pl-[10px] grid grid-cols-[repeat(3,27rem)] gap-4">
+        <div class=" grid grid-cols-[repeat(3,27rem)] gap-8">
             <!-- National Emergency Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
@@ -281,7 +281,8 @@
                             <!-- Anti-Corruption Logo -->
                             <div
                                 class="bg-[#770d09a4] w-[4rem] h-[4rem] flex justify-center items-center rounded-[1rem] p-0">
-                                <img class="p-[14px]" src="assets/Seal_of_the_Anti-Corruption_Commission_(Bangladesh).png" alt="">
+                                <img class="p-[14px]"
+                                    src="assets/Seal_of_the_Anti-Corruption_Commission_(Bangladesh).png" alt="">
                             </div>
                             <!-- Heart Logo -->
                             <i class="fa-regular fa-heart"></i>
@@ -321,7 +322,8 @@
                             <!-- Electricity Helpline Logo -->
                             <div
                                 class="bg-[#299ed4] w-[4rem] h-[4rem] flex justify-center items-center rounded-[1rem] p-0">
-                                <img class="p-[14px]" src="assets/Bangladesh_Power_Development_Board_Logo.svg.png" alt="">
+                                <img class="p-[14px]" src="assets/Bangladesh_Power_Development_Board_Logo.svg.png"
+                                    alt="">
                             </div>
                             <!-- Heart Logo -->
                             <i class="fa-regular fa-heart"></i>
@@ -406,7 +408,8 @@
                             <i class="fa-regular fa-heart"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Bangladesh Railway Helpline
+                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Bangladesh Railway
+                            Helpline
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Bangladesh Railway</h2>
@@ -431,11 +434,46 @@
             </div>
 
         </div>
+        <!-- History Card Section -->
+        <div class=".inter-normal">
+            <div class="card bg-base-100 w-[25rem] h-[71.5rem] shadow-sm">
+                <div class="card-body">
+                    <div class="flex flex-row justify-between items-center">
+
+                        <h2 class="card-title .roboto-normal text-[1.25rem] font-medium"><i
+                                class="fa-regular fa-clock"></i>Call History</h2>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn w-[7.13rem] h-[3.25rem] bg-[#00a63e] text-[white] rounded-[3.125rem] font-semibold text-[1rem]">Clear</button>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- History Lists -->
+                        <ul>
+                            <!-- History -->
+                            <li
+                                class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
+                                <section>
+                                    <!-- Service Platform -->
+                                    <h3 class="font-semibold text-[1.125rem]"></h3>
+                                    <!-- Service Number -->
+                                    <h4 class="font-normal text-[1.125rem] text-[#5c5c5c] roboto-normal"></h4>
+
+                                </section>
+                                <!-- Time Duration -->
+                                <section>
+                                    <h3 class="font-normal text-[1.125rem] text-[#111111]"><span></span><span>
+                                        </span></h3>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
-    <footer>
-
-    </footer>
     <script src="script.js"></script>
 
 </body>
