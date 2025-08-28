@@ -47,11 +47,11 @@
                 <!-- Coin Badge -->
                 <span
                     class="badge nav-badge bg-[#41ff6b1a] h-[3.25rem] w-[7.69rem] rounded-[3.125rem] mr-[1.25rem]"><span
-                        class="font-black text-[1rem]">100</span><img class="w-[1.88rem] h-[1.88rem]"
+                        id="coin" class="font-black text-[1rem]">100</span><img class="w-[1.88rem] h-[1.88rem]"
                         src="assets/coin.png" alt=""></span>
                 <!-- Copy Button -->
                 <button
-                    class="btn nav-badge text-[#ffffff] bg-[#00a63e] h-[3.25rem] w-[7.94rem] rounded-[3.125rem] font-semibold text-[1rem]"><span></span>
+                    class="btn nav-badge text-[#ffffff] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] bg-[#00a63e] h-[3.25rem] w-[7.94rem] rounded-[3.125rem] font-semibold text-[1rem]"><span>0</span>
                     Copy</button>
             </div>
         </div>
@@ -90,11 +90,13 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">National Emergency Number
+                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                            National Emergency Number
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">National Emergency</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
+                        <h2 id="national-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">National
+                            Emergency</h2>
+                        <h1 id="national-number" class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             All</div>
@@ -102,12 +104,13 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
+                        <!-- Copy Button -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <!-- Call Button -->
+                        <button id="national-call-btn"
+                            class="btn  bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -131,8 +134,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Police Helpline Number
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Police</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
+                        <h2 id="police-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Police
+                        </h2>
+                        <h1 id="police-number" class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Police</div>
@@ -140,12 +144,13 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
+                        <!-- Copy Button -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <!-- Call Button -->
+                        <button id="police-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -170,8 +175,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Fire Service Number
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Fire Service</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
+                        <h2 id="fire-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Fire Service
+                        </h2>
+                        <h1 id="fire-number" class="mt-[1.5rem] font-bold text-[2rem]">999</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Fire</div>
@@ -179,12 +185,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="fire-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -210,8 +215,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Ambulance Service Number
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Ambulance</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">1994-999999</h1>
+                        <h2 id="ambulance-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
+                            Ambulance</h2>
+                        <h1 id="ambulance-number" class="mt-[1.5rem] font-bold text-[2rem]">1994-999999</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Health</div>
@@ -219,12 +225,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="ambulance-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -250,8 +255,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Women & Child Helpline
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Women & Child Helpline</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">109</h1>
+                        <h2 id="womenAndChild-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
+                            Women & Child Helpline</h2>
+                        <h1 id="womenAndChild-number" class="mt-[1.5rem] font-bold text-[2rem]">109</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Help</div>
@@ -259,12 +265,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="womenAndChild-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -291,8 +296,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Anti-Corruption Helpline
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Anti-Corruption</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">106</h1>
+                        <h2 id="corruption-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
+                            Anti-Corruption</h2>
+                        <h1 id="corruption-number" class="mt-[1.5rem] font-bold text-[2rem]">106</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Govt.</div>
@@ -300,12 +306,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="corruption-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -332,8 +337,9 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Electricity Helpline
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Electricity Outage</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">16216</h1>
+                        <h2 id="electricity-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
+                            Electricity Outage</h2>
+                        <h1 id="electricity-number" class="mt-[1.5rem] font-bold text-[2rem]">16216</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Electricity</div>
@@ -341,12 +347,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="electricity-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -372,8 +377,8 @@
                         <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Brac Helpline
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Brac</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">16445</h1>
+                        <h2 id="brac-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Brac</h2>
+                        <h1 id="brac-number" class="mt-[1.5rem] font-bold text-[2rem]">16445</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             NGO</div>
@@ -381,12 +386,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="brac-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -412,8 +416,9 @@
                             Helpline
                         </h2>
                         <!-- Bottom Heading -->
-                        <h2 class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Bangladesh Railway</h2>
-                        <h1 class="mt-[1.5rem] font-bold text-[2rem]">163</h1>
+                        <h2 id="railway-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
+                            Bangladesh Railway</h2>
+                        <h1 id="railway-number" class="mt-[1.5rem] font-bold text-[2rem]">163</h1>
                         <div
                             class="badge bg-[#f2f2f2] badge-primary mt-[0.125rem] inter-normal font-normal text-[1.125rem] text-[#5C5C5C] border-0">
                             Travel</div>
@@ -421,12 +426,11 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <!-- width: 11.4rem; height: 2.5rem; -->
                         <button
                             class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
                                 class="fa-regular fa-copy"></i>Copy</button>
-                        <button
-                            class="btn btn-primary bg-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                        <button id="railway-call-btn"
+                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
                                 class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -443,8 +447,9 @@
                         <h2 class="card-title .roboto-normal text-[1.25rem] font-medium"><i
                                 class="fa-regular fa-clock"></i>Call History</h2>
                         <div class="card-actions justify-end">
+                            <!-- Clear Button -->
                             <button
-                                class="btn w-[7.13rem] h-[3.25rem] bg-[#00a63e] text-[white] rounded-[3.125rem] font-semibold text-[1rem]">Clear</button>
+                                class="btn w-[7.13rem] h-[3.25rem] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] bg-[#00a63e] text-[white] rounded-[3.125rem] font-semibold text-[1rem]">Clear</button>
                         </div>
                     </div>
                     <div>
