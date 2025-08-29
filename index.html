@@ -49,10 +49,11 @@
                     class="badge nav-badge bg-[#41ff6b1a] h-[3.25rem] w-[7.69rem] rounded-[3.125rem] mr-[1.25rem]"><span
                         id="coin" class="font-black text-[1rem]">100</span><img class="w-[1.88rem] h-[1.88rem]"
                         src="assets/coin.png" alt=""></span>
-                <!-- Copy Button -->
+                <!-- Copy Badge -->
                 <button
-                    class="btn nav-badge text-[#ffffff] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] bg-[#00a63e] h-[3.25rem] w-[7.94rem] rounded-[3.125rem] font-semibold text-[1rem]"><span>0</span>
-                    Copy</button>
+                    class="btn nav-badge text-[#ffffff] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] bg-[#00a63e] h-[3.25rem] w-[7.94rem] rounded-[3.125rem] font-semibold text-[1rem]"><span
+                        id="copied">0</span><span>Copy</span>
+                </button>
             </div>
         </div>
 
@@ -74,7 +75,7 @@
     <main class="bg-[#f5fff6] flex flex-row gap-8 p-4 items-start justify-center">
         <!-- Service Card Section -->
         <div class="card-container grid grid-cols-[repeat(3,27rem)] gap-8">
-            <!-- National Emergency Card -->
+            <!-- 1.National Emergency Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -105,17 +106,19 @@
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
                         <!-- Copy Button -->
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <button id="copy-btn1"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
                         <!-- Call Button -->
                         <button id="national-call-btn"
                             class="btn  bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- Police Helpline Card -->
+            <!-- 2.Police Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -146,18 +149,20 @@
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
                         <!-- Copy Button -->
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <button id="copy-btn2"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
                         <!-- Call Button -->
                         <button id="police-call-btn"
-                            class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                            class="call-btn btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
-            <!-- Fire Service Card -->
+            <!-- 3.Fire Service Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -187,18 +192,22 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn3"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="fire-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Ambulance Service Card -->
+            <!-- 4.Ambulance Service Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -228,18 +237,22 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn4"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="ambulance-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Women & Child Helpline Card -->
+            <!-- 5.Women & Child Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -269,18 +282,22 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn5"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="womenAndChild-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Anti-Corruption Helpline Card -->
+            <!-- 6.Anti-Corruption Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -311,18 +328,22 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn6"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="corruption-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Electricity Helpline Card -->
+            <!-- 7.Electricity Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -353,18 +374,22 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn7"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="electricity-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- BRAC Helpline Card -->
+            <!-- 8.BRAC Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -393,17 +418,21 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn8"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="brac-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 
             </div>
-            <!-- Bangladesh Railway Helpline Card -->
+            <!-- 9.Bangladesh Railway Helpline Card -->
             <div
                 class="card bg-white shadow-[0rem_2rem_3rem_0rem_rgba(0,0,0,0.15)] p-0 rounded-xl w-[27.29rem] h-[22.5rem]">
                 <div class="card-body p-[2rem] roboto-normal">
@@ -434,12 +463,16 @@
 
                     <div
                         class="card-actions flex flex-row justify-center items-center text-center m-[0,auto] mt-[1.5rem]">
-                        <button
-                            class="btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
-                                class="fa-regular fa-copy"></i>Copy</button>
+                        <!-- Copy Button -->
+                        <button id="copy-btn9"
+                            class="copy-btn btn btn-ghost hover:bg-[black] hover:text-[white] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-[0.06rem] border-[#d4d6d5] font-normal text-[1rem] text-[#5c5c5c]"><i
+                                class="fa-regular fa-copy"></i>Copy
+                        </button>
+                        <!-- Call Button -->
                         <button id="railway-call-btn"
                             class="btn btn-primary bg-[#00a63e] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] ml-[0.5rem] w-[10rem] h-[2rem] p-[1rem] rounded-[0.5rem] border-0 font-light text-[1rem] text-[white]"><i
-                                class="fa-solid fa-phone"></i>Call</button>
+                                class="fa-solid fa-phone"></i>Call
+                        </button>
                     </div>
                 </div>
 

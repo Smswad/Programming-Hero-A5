@@ -2,6 +2,7 @@
 let count = 0;
 const counter = document.getElementById("wishlisted");
 
+
 const wishlist_counter = document.querySelectorAll(".add-wishlist").forEach(function (button) {
     button.addEventListener("click", function (e) {
         e.preventDefault();
@@ -472,3 +473,141 @@ document.getElementById("clear-btn").addEventListener('click', function () {
     callHistory.length = 0;
     history_container.innerText = '';
 });
+
+// Copy Button
+const copy_function = document.getElementById("copied");
+
+const Copy_counter = document.querySelectorAll(".copy-btn").forEach(function (button) {
+    button.addEventListener("click", function (e) {
+        e.preventDefault();
+        count++;
+        copy_function.textContent = count;
+    })
+})
+// Copy To Clipboard
+const copyButton1 = document.getElementById("copy-btn1");
+
+const national_number = document.getElementById("national-number");
+copyButton1.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(national_number.innerText)
+        .then(function () {
+            alert("Copied: " + national_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton2 = document.getElementById("copy-btn2");
+const police_number = document.getElementById("police-number");
+copyButton2.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(police_number.innerText)
+        .then(function () {
+            alert("Copied: " + police_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton3 = document.getElementById("copy-btn3");
+const fire_number = document.getElementById("fire-number");
+copyButton3.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(fire_number.innerText)
+        .then(function () {
+            alert("Copied: " + fire_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton4 = document.getElementById("copy-btn4");
+const ambulance_number = document.getElementById("ambulance-number");
+copyButton4.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(ambulance_number.innerText)
+        .then(function () {
+            alert("Copied: " + ambulance_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton5 = document.getElementById("copy-btn5");
+const womenAndChild_number = document.getElementById("womenAndChild-number");
+copyButton5.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(womenAndChild_number.innerText)
+        .then(function () {
+            alert("Copied: " + womenAndChild_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton6 = document.getElementById("copy-btn6");
+const corruption_number = document.getElementById("corruption-number");
+copyButton6.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(corruption_number.innerText)
+        .then(function () {
+            alert("Copied: " + corruption_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton7 = document.getElementById("copy-btn7");
+const electricity_number = document.getElementById("electricity-number");
+copyButton7.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(electricity_number.innerText)
+        .then(function () {
+            alert("Copied: " + electricity_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton8 = document.getElementById("copy-btn8");
+const brac_number = document.getElementById("brac-number");
+copyButton8.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(brac_number.innerText)
+        .then(function () {
+            alert("Copied: " + brac_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
+
+const copyButton9 = document.getElementById("copy-btn9");
+const railway_number = document.getElementById("railway-number");
+copyButton9.addEventListener("click", function () {
+
+    navigator.clipboard.writeText(railway_number.innerText)
+        .then(function () {
+            alert("Copied: " + railway_number.innerText);
+        })
+        .catch(function (err) {
+            console.error("Failed to copy: ", err);
+        })
+
+})
