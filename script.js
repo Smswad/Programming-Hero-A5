@@ -14,7 +14,7 @@ const wishlist_counter = document.querySelectorAll(".add-wishlist").forEach(func
 
 const callHistory = [];
 let coin_counter = parseInt(document.getElementById('coin').innerText);
-
+const history_container = document.getElementById("history-container");
 // National Emergency
 const national_counter = document.getElementById('national-call-btn')
     .addEventListener("click", function () {
@@ -33,23 +33,20 @@ const national_counter = document.getElementById('national-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
 
-            callHistory.push(data);
-
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[6.56rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -65,13 +62,8 @@ const national_counter = document.getElementById('national-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
+            history_container.appendChild(li);
         }
-        document.getElementById("clear-btn")
-            .addEventListener('click', function () {
-                history_container.innerText = '';
-            })
     })
 
 // Police Helpline
@@ -91,21 +83,19 @@ const police_counter = document.getElementById('police-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -121,12 +111,7 @@ const police_counter = document.getElementById('police-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -147,21 +132,19 @@ const fire_counter = document.getElementById('fire-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -177,12 +160,7 @@ const fire_counter = document.getElementById('fire-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -204,21 +182,19 @@ const ambulance_counter = document.getElementById('ambulance-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -234,12 +210,7 @@ const ambulance_counter = document.getElementById('ambulance-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -261,21 +232,19 @@ const womenAndChild_counter = document.getElementById('womenAndChild-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -291,12 +260,7 @@ const womenAndChild_counter = document.getElementById('womenAndChild-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -318,21 +282,19 @@ const corruption_counter = document.getElementById('corruption-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -348,12 +310,7 @@ const corruption_counter = document.getElementById('corruption-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -375,21 +332,19 @@ const electricity_counter = document.getElementById('electricity-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                                 <li
                                     class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                     <section>
@@ -405,12 +360,7 @@ const electricity_counter = document.getElementById('electricity-call-btn')
                                     </section>
                                 </li>
                     `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -432,21 +382,19 @@ const brac_counter = document.getElementById('brac-call-btn')
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+        console.log(coin_counter);
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -462,12 +410,7 @@ const brac_counter = document.getElementById('brac-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
     })
 
@@ -488,22 +431,21 @@ const railway_counter = document.getElementById('railway-call-btn')
 
         if (coin_counter < 0) {
             alert("❌ You do not have sufficient coins! To make a call you need at least 20 coin.")
+            return;
         }
-        else {
-            console.log(coin_counter);
-            alert("📞 Calling " + name + " " + number + "...");
-            document.getElementById('coin').innerText = coin_counter;
-            const data = {
-                service: service,
-                number: number,
-                time: new Date().toLocaleTimeString(),
-            }
-            callHistory.push(data);
-            const history_container = document.getElementById("history-container")
-            history_container.innerText = '';
-            for (const data of callHistory) {
-                const li = document.createElement("li")
-                li.innerHTML = `
+
+        alert("📞 Calling " + name + " " + number + "...");
+        document.getElementById('coin').innerText = coin_counter;
+        const data = {
+            service: service,
+            number: number,
+            time: new Date().toLocaleTimeString(),
+        }
+        callHistory.push(data);
+        history_container.innerText = '';
+        for (const data of callHistory) {
+            const li = document.createElement("li")
+            li.innerHTML = `
                             <li
                                 class="bg-[#fafafa] w-[22rem] h-[6.56rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
                                 <section>
@@ -519,13 +461,14 @@ const railway_counter = document.getElementById('railway-call-btn')
                                 </section>
                             </li>
                 `
-                history_container.appendChild(li);
-            }
-            // Call History Clear Button
-
-            document.getElementById("clear-btn")
-                .addEventListener('click', function () {
-                    history_container.innerText = '';
-                })
+            history_container.appendChild(li);
         }
+
     })
+
+// Call History Clear Button
+
+document.getElementById("clear-btn").addEventListener('click', function () {
+    callHistory.length = 0;
+    history_container.innerText = '';
+});
