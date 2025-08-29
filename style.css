@@ -83,15 +83,20 @@
         width: 240px;
         
 
+
     }
 
     .history-container .card {
-        margin-top: 20px;
-        width: 290px;
+        margin-top: 1rem;
+        width: 100%;
+        height: auto;
     }
 
     .card-title {
         font-size: medium;
+    }
+    .card-body{
+        width: 100%;
     }
 }
 
@@ -171,8 +176,9 @@
     }
 
     .history-container .card {
-        margin-top: 20px;
-        width: 341px;
+        margin-top: 1rem;
+        width: 100%;
+        height: auto;
     }
 
     .card-title {
@@ -251,6 +257,11 @@
 
     .history-container {
         margin-top: 20px;
+        width: 100%;
+    }
+    .history-container .card {
+        height: auto;
+        margin-top: 1rem;
         width: 100%;
     }
 }
