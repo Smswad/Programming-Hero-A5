@@ -13,9 +13,52 @@
 
 /* Responsive for Small Mobile Device */
 @media screen and (min-width: 320px) and (max-width:374px) {
-    * {
+    .nav-bar {
+        padding: 0;
+        flex-direction: column;
+        margin: 1.25rem 1.25rem 0rem 1.25rem;
+    }
+
+    .badge-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+
+    }
+
+    .nav-badge {
         justify-content: center;
         align-items: center;
+        max-width: fit-content;
+    }
+
+    /* frame styles */
+
+    .frame-container {
+        margin-top: 1.25rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .frame-logo {
+        width: 3.13rem;
+        height: 3.13rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .tframe-h {
+        font-size: medium;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+    }
+
+    .dframe-h {
+        font-size: small;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 
     main {
@@ -24,14 +67,84 @@
 
     .card-container {
         display: block;
+    }
+
+    .all_card_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .copy-button,
+    .call-button {
+        width: 40%;
+    }
+
+    .history-container ul li {
+        width: 240px;
+        
+
+    }
+
+    .history-container .card {
+        margin-top: 20px;
+        width: 290px;
+    }
+
+    .card-title {
+        font-size: medium;
     }
 }
 
 /* Responsive for Medium Mobile Device */
 @media screen and (min-width:375px) and (max-width: 424px) {
-    * {
+    /* navbar styles */
+
+    .nav-bar {
+        padding: 0;
+        flex-direction: column;
+        margin: 1.25rem 1.25rem 0rem 1.25rem;
+    }
+
+    .badge-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+
+    }
+
+    .nav-badge {
         justify-content: center;
         align-items: center;
+        max-width: fit-content;
+    }
+
+    /* frame styles */
+
+    .frame-container {
+        margin-top: 1.25rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .frame-logo {
+        width: 3.13rem;
+        height: 3.13rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .tframe-h {
+        font-size: medium;
+        margin: 0 auto;
+        margin-top: 1rem;
+
+    }
+
+    .dframe-h {
+        font-size: small;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 
     main {
@@ -41,6 +154,31 @@
     .card-container {
         display: block;
     }
+
+    .all_card_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .copy-button,
+    .call-button {
+        width: 40%;
+    }
+
+    .history-container ul li {
+        width: 290px;
+
+    }
+
+    .history-container .card {
+        margin-top: 20px;
+        width: 341px;
+    }
+
+    .card-title {
+        font-size: medium;
+    }
+
 
 }
 
@@ -99,5 +237,20 @@
 
     .card-container {
         display: block;
+    }
+
+    .all_card_container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .copy-button,
+    .call-button {
+        width: 40%;
+    }
+
+    .history-container {
+        margin-top: 20px;
+        width: 100%;
     }
 }
