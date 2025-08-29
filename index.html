@@ -71,7 +71,7 @@
             </h3>
         </div>
     </header>
-    <main class="bg-[#f5fff6] flex flex-row gap-8 p-4 items-start">
+    <main class="bg-[#f5fff6] flex flex-row gap-8 p-4 items-start justify-center">
         <!-- Service Card Section -->
         <div class="card-container grid grid-cols-[repeat(3,27rem)] gap-8">
             <!-- National Emergency Card -->
@@ -90,7 +90,7 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                        <h2 id="national-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
                             National Emergency Number
                         </h2>
                         <!-- Bottom Heading -->
@@ -131,7 +131,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Police Helpline Number
+                        <h2 id="police-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Police
+                            Helpline Number
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="police-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Police
@@ -172,7 +173,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Fire Service Number
+                        <h2 id="fire-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Fire
+                            Service Number
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="fire-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Fire Service
@@ -212,7 +214,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Ambulance Service Number
+                        <h2 id="ambulance-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                            Ambulance Service Number
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="ambulance-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
@@ -252,7 +255,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Women & Child Helpline
+                        <h2 id="womenAndChild-service"
+                            class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Women & Child Helpline
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="womenAndChild-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
@@ -293,7 +297,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Anti-Corruption Helpline
+                        <h2 id="corruption-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                            Anti-Corruption Helpline
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="corruption-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
@@ -334,7 +339,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Electricity Helpline
+                        <h2 id="electricity-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                            Electricity Helpline
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="electricity-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">
@@ -374,7 +380,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Brac Helpline
+                        <h2 id="brac-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Brac
+                            Helpline
                         </h2>
                         <!-- Bottom Heading -->
                         <h2 id="brac-helpline" class="card-title mt-[0.125rem] font-normal text-[1.125rem]">Brac</h2>
@@ -412,7 +419,8 @@
                             <i class="add-wishlist fa-regular fa-heart cursor-pointer"></i>
                         </div>
                         <!-- Top Heading -->
-                        <h2 class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">Bangladesh Railway
+                        <h2 id="railway-service" class="card-title mt-[1rem] inter-normal font-bold text-[1.5rem]">
+                            Bangladesh Railway
                             Helpline
                         </h2>
                         <!-- Bottom Heading -->
@@ -448,36 +456,20 @@
                                 class="fa-regular fa-clock"></i>Call History</h2>
                         <div class="card-actions justify-end">
                             <!-- Clear Button -->
-                            <button
+                            <button id="clear-btn"
                                 class="btn w-[7.13rem] h-[3.25rem] hover:bg-[white] hover:text-[#00a63e] hover:border-[0.06rem] hover:border-[#00a63e] bg-[#00a63e] text-[white] rounded-[3.125rem] font-semibold text-[1rem]">Clear</button>
                         </div>
                     </div>
                     <div>
                         <!-- History Lists -->
-                        <ul>
+                        <ul id="history-container">
                             <!-- History -->
-                            <li
-                                class="bg-[#fafafa] w-[22rem] h-[5.19rem] rounded-[0.5rem] mt-[1rem] p-[1rem] flex flex-rows justify-between items-center">
-                                <section>
-                                    <!-- Service Platform -->
-                                    <h3 class="font-semibold text-[1.125rem]"></h3>
-                                    <!-- Service Number -->
-                                    <h4 class="font-normal text-[1.125rem] text-[#5c5c5c] roboto-normal"></h4>
 
-                                </section>
-                                <!-- Time Duration -->
-                                <section>
-                                    <h3 class="font-normal text-[1.125rem] text-[#111111]"><span></span><span>
-                                        </span></h3>
-                                </section>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
     <script src="script.js"></script>
 
